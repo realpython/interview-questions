@@ -20,11 +20,11 @@ class testParseCSVTest(unittest.TestCase):
         self.assertEqual(self.test.read_data()[1][6], '511')
 
     def test_get_min_difference(self):
-        self.assertEqual(self.test.get_min_difference(self.parsed_data, 3, 4), 16)
+        self.assertEqual(self.test.get_min_difference(self.parsed_data, 2, 3), 6)
 
     def test_get_name(self):
-        index_value = self.test.get_min_difference(self.parsed_data, 3, 4)
-        self.assertEqual(self.test.get_team(index_value, self.parsed_data), '4/15/14')
+        index_value = self.test.get_min_difference(self.parsed_data, 2, 3)
+        self.assertEqual(self.test.get_team(index_value, self.parsed_data), '4/30/14')
 
 
 if __name__ == '__main__':
