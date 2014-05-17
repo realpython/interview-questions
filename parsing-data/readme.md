@@ -1,6 +1,6 @@
 # Interview Question: Parsing CSV Files
 
-So, a friend of mine recently interviwed for a back-end Python developer position, and the initial interview consisted of answering the following problem. He was given two hours.
+So, a friend of mine recently interviewed for a back-end Python developer position, and the initial interview consisted of answering the following problem. He was given two hours.
 
 ## Problem
 
@@ -97,9 +97,9 @@ OK
 Back to the test file. This time, we want to find the "smallest difference in ‘for’ and ‘against’ goals". So, add this import and function:
 
 ```python
-	from parse_csv import read_data, get_min_score_difference
+    from parse_csv import read_data, get_min_score_difference
 
-	...
+    ...
 
     def test_get_min_score_difference(self):
         self.assertEqual(get_min_score_difference(parsed_data), "no idea")
@@ -347,7 +347,7 @@ if __name__ == '__main__':
 
 There are minimal changes here. At this point, you could create a separate CSV file for testing. Instead, let's go on to the next part and look at the CSV issue later. 
 
-> Remember: Let’s not over optimise too early - just make the minimal changes necessary to get the tests to pass. We do have some naming issues and a few other issues to refactor. However, let's work on the second part of the problem, incoporating the weather data into this code, then refactor at the end.
+> Remember: Let’s not over optimize too early - just make the minimal changes necessary to get the tests to pass. We do have some naming issues and a few other issues to refactor. However, let's work on the second part of the problem, incorporating the weather data into this code, then refactor at the end.
 
 ## Weather
 
