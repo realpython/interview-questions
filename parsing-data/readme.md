@@ -345,6 +345,8 @@ if __name__ == '__main__':
 
 There are minimal changes here. At this point, you could create a separate CSV file for testing. Instead, let's go on to the next part and look at the CSV issue later. 
 
+> Remember: Let’s not over optimise too early - just make the minimal changes necessary to get the tests to pass. We do have some naming issues and a few other issues to refactor. However, let's work on the second part of the problem, incoporating the weather data into this code, then refactor at the end.
+
 ## Weather
 
 ### Watch our tests Fail
@@ -612,7 +614,7 @@ Run the tests. They should pass.
 
 ### One last thing ...
 
-One thing to keep in mind is the nature of the `pop()` method. It's destructive, so it alters the original list, `parsed_data`, removing the headers permanently with the `get_min_difference()` function. What are the ramifications of this? 
+One thing to keep in mind is the nature of the `pop()` method. It's destructive, so it alters the original list, `parsed_data`, removing the headers permanently within the `get_min_difference()` function. What are the ramifications of this? 
 
 Let's test it out.
 
@@ -649,7 +651,7 @@ def get_min_difference(self, parsed_data, column1, column2):
     return values.index(min(values))
 ```
 
-Run the test again. You should see the following faulure:
+Run the test again. You should see the following failure:
 
 ```
 $ python parse_csv_test.py
