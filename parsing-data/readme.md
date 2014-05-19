@@ -105,7 +105,7 @@ Back to the test file. This time, we want to find the "smallest difference in â€
         self.assertEqual(get_min_score_difference(parsed_data), "no idea")
 ```
 
-Since, we don't know off hand what the smallest difference will be, we can just added the string "no idea". You could update that when you know what the answer is after we add the `get_min_score_difference()` function to *parse_csv.py* - but how do we know if that answer is correct?
+Since, we don't know off hand what the smallest difference will be, we can just add the string "no idea". You could update that when you know what the answer is after we add the `get_min_score_difference()` function to *parse_csv.py* - but how do we know if that answer is correct?
 
 Keep in mind, that since this is a small amount of data, you can get away with calculating them all by hand and finding the smallest difference. Or you could also use test data.:
 
@@ -158,7 +158,7 @@ OK
 
 They pass. But remember - There is another step to the TDD process: Refactoring. (*Hint, hint*).
 
-As yourself: Since we eventually want the name of the team with the smallest spread, does it help to get the minimum value? No. It would be much easier to find the minimum value and then return the index value so that we can plug that in to the next function to easily get the name of the team.
+Ask yourself: Since we eventually want the name of the team with the smallest spread, does it help to get the minimum value? No. It would be much easier to find the minimum value and then return the index value so that we can plug that in to the next function to easily get the name of the team.
 
 First, rewrite the test:
 
@@ -479,7 +479,7 @@ AssertionError: 2 != 'no idea'
 
 This essentially is saying that the smallest difference between the second and third column is row two. Is that correct? We addressed this very same issue earlier:
 
-> Since, we don't know off hand what the smallest difference will be, we can just added the string "no idea". You could update that when you know what the answer is after we add the `get_min_score_difference()` function to *parse_csv.py* - but how do we know if that answer is correct?
+> Since, we don't know off hand what the smallest difference will be, we can just add the string "no idea". You could update that when you know what the answer is after we add the `get_min_score_difference()` function to *parse_csv.py* - but how do we know if that answer is correct?
 
 > Keep in mind, that since this is a small amount of data, you can get away with calculating them all by hand and finding the smallest difference. Or you could also use test data.
 
