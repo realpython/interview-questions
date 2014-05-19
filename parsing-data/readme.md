@@ -9,6 +9,8 @@ So, a friend of mine recently interviewed for a back-end Python developer positi
 1. See if you can write the same program to solve both questions.
 1. Test Driven Development!
 
+You can grab all the files [here](https://github.com/realpython/interview-questions/tree/master/parsing-data).
+
 *Before you look at my answer below, I **urge** you to try this on your own.*
 
 > **Note:** I have not solved this problem before, so I will be going through a number of iterations. Hopefully, this will give you insight into the process/workflow I went through. Once finished, compare your workflow with mine. What did you do differently? Finally, I will be using a true TDD approach for this. In other words, after I write a test, I will only write just enough code to get it to pass. That said, there will most likely be plenty of refactoring throughout. Bare with me. Patience.
