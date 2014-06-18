@@ -5,19 +5,16 @@ from urlparse import urljoin
 
 def get_data(url, base):
     response = requests.get(url)
-
     soup = BeautifulSoup(response.content)
 
     for listing in soup.find_all('p', 'row'):
-        if listing.find('span', 'price') is not None:
-            price = listing.text[2:6]
-            price = int(price)
+        if listing.find('span', 'price'):
+            price = int(listing.text[2:6])
             if price <= 250 and price > 100:
                 print listing.text
-                linkend = listing.a['href']
-                url = urljoin(base, linkend)
-                print url
-                print "\n"
+                print urljoin(base, listing.a['href'])
+                print '\n'
+
 
 
 url = 'http://philadelphia.craigslist.org/search/sss?sort=date&query=firefly%20tickets'
