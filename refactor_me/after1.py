@@ -10,7 +10,7 @@ def get_data(url, base):
     for listing in soup.find_all('p', 'row'):
         if listing.find('span', 'price'):
             price = int(listing.text[2:6])
-            if price <= 250 and price > 100:
+            if  100 < price <= 250:
                 print listing.text
                 print urljoin(base, listing.a['href'])
                 print '\n'
